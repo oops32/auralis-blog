@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.0"
-gem "minima", "~> 2.5"
-gem "github-pages", group: :jekyll_plugins
+# gem "jekyll", "~> 4.3.0" # Commented out - using github-pages gem instead
+gem "github-pages", "~> 232", group: :jekyll_plugins
+gem "webrick", "~> 1.8" # Required for Ruby 3.0+
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
